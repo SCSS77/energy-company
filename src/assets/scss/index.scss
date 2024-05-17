@@ -1,0 +1,120 @@
+@import "src/assets/scss/utils/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/nunito-latin-regular.woff2") format("woff2"),
+    url("../fonts/nunito-latin-regular.woff") format("woff");
+}
+
+body,
+html {
+  margin: .5rem;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $gray2;
+  height: calc(100% - 1rem);
+}
+
+.background {
+  border-radius: 1rem;
+  background-color: $gray-soft2;
+  height: 100%;
+}
+
+.shadow {
+
+  &-2 {
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .02), 0 .2rem .4rem rgba(0, 0, 0, .02),
+      0 .4rem .8rem rgba(0, 0, 0, .02), 0 .8rem 1.6rem rgba(0, 0, 0, .02),
+      0 1.6rem 3.2rem rgba(0, 0, 0, 0.02), 0 3.2rem 6.4rem rgba(0, 0, 0, .02);
+  }
+
+  &-5 {
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .05), 0 .2rem .4rem rgba(0, 0, 0, .05),
+      0 .4rem .8rem rgba(0, 0, 0, .05), 0 .8rem 1.6rem rgba(0, 0, 0, .05),
+      0 1.6rem 3.2rem rgba(0, 0, 0, .05), 0 3.2rem 6.4rem rgba(0, 0, 0, .05);
+  }
+}
+
+.bg {
+
+  &-very-light-grey {
+    background-color: $gray-soft2;
+  }
+
+  &-white {
+    background-color: $white;
+  }
+
+  &-silver {
+    background-color: $silver;
+  }
+
+  &-blue {
+    background: linear-gradient(
+      0deg,
+      $blue 0%,
+      $blue-soft 100%
+    );
+  }
+
+  &-light-grey {
+    background: linear-gradient(
+      0deg,
+      $gray-soft4 0%,
+      $white 100%
+    );
+  }
+
+  &-super-light-grey {
+    background-color: $gray-soft3;
+  }
+
+  &-green {
+    background: linear-gradient(0deg, $green 0%, $green-soft 100%);
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.darkgray {
+  color: $dark-gray;
+}
+
+.green {
+  color: $green;
+}
+
+.brown {
+  color: $brown;
+}
+
+.greyBlue {
+  color: $violet;
+}
+
+.menuWidth {
+  min-width: 12rem;
+}
+
+.chartHeight {
+  height: 17rem;
+}
+
+.roundedMore {
+  border-radius: .5rem;
+}
+
+.border-grey {
+  border: .1rem solid $gray-soft3;
+}

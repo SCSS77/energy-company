@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Sidebar } from "./Sidebar";
 import { EnergyConsumption } from "./EnergyConsumption";
 import { getReadings } from "../utils/reading";
-import '../assets/css/styles.css';
+import '../assets/scss/basscss.scss';
 
 interface Reading {
   time: number;
@@ -30,7 +30,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="background shadow-2 flex overflow-hidden">
+    <div className="bg-super-light-grey shadow-2 flex overflow-hidden">
       <aside className="p3 menuWidth overflow-auto">
         <Sidebar />
       </aside>

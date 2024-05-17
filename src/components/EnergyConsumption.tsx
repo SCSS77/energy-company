@@ -38,7 +38,7 @@ export const EnergyConsumption: React.FC<EnergyConsumptionProps> = ({ readings }
               pb1
               roundedMore
               border-grey
-              bg-blue
+              bg-green
               white
               bold
             "

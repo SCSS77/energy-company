@@ -32,7 +32,7 @@ export const renderChart = (containerId: string, readings: Reading[]): void => {
         label: "kWh usage",
         data: values,
         fill: true,
-        backgroundColor: "#5A8EDA",
+        backgroundColor: "#499E47",
         borderRadius: 10,
       },
     ],
